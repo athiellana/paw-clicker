@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Paw Clicker</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/ico" href="./assets/favicon.ico"/>
+</head>
+<body>
+    <div id="game_cat">
+        <h1 id="game_title" Paw Clicker></h1>
+        <p id="paws">Paws collected: 0</p>
+        <img id="cat" src="./assets/cat.png" alt="Cat" onclick="clickCat()">
+        <img id="catOnClick" src="./assets/cat_onclick.png" alt="Cat on click with eyes closed" style="display:none;">
+    </div>
+    <div id="menu_buttons">
+        <button class="button_skins" role="button">Skins</button>
+        <button class="button_param" role="button">Settings</button>
+        <button class="button_b" role="button">B</button>
+    </div>
+    <div>
+        <img id="catTree" src="./assets/cattree.png" alt="Cat tree" style="display:none">
+    </div>
+    
+    <div id="shop_cat">
+        <h2 id="shop_title">🐈 BONUS SHOP 🐈</h2>
+        <ul class="bonus-list">
+            <li class="bonus-item">
+                <p id="bonus">Paws per click: 1</p>
+                <p id="cout_bonus">Price: 10 paws</p>
+                <button id="button_buy" onclick="buyMorePaws()">More paws!</button>
+            </li>
+            <li class="bonus-item">
+                <p id="autoClicker">Autoclicker</p>
+                <p id="autoClickerPrice">Price: 20.000</p>
+                <button id="button_buy_autoclicker" onclick="buyAutoClicker()">Buy!</button>
+                <p id="autoClickerUpgradeCost" style="display:none;">Upgrade Cost: 30.000</p>
+                <button id="button_upgrade_autoclicker" onclick="upgradeAutoClicker()" style="display:none;">Upgrade!</button>
+                <p id="autoClickerSpeed" style="display:none;">Click every 2 seconds</p>
+            </li>
+            <li class="bonus-item">
+                <p id="bonus">Cat food (x2 paws)</p>
+                <p id="cout_bonus">Price: ? paws</p>
+                <button id="button_buy" onclick="acheterBonus(2)">Buy!</button>
+            </li>
+            <li class="bonus-item">
+                <p id="bonus">Cat basket (x3 paws)</p>
+                <p id="cout_bonus">Price: ? paws</p>
+                <button id="button_buy" onclick="acheterBonus(2)">Buy!</button>
+            </li>
+            <li class="bonus-item">
+                <p id="bonus">Cat tree (x2 paws)</p>
+                <p id="cout_bonus">Price: 10.000.000 paws</p>
+                <button id="button_buy" onclick="buyCatTree(2)">Buy!</button>
+            </li>
+            <li class="bonus-item">
+                <p id="bonus">Cat toys (x5 paws)</p>
+                <p id="cout_bonus">Price: ? paws</p>
+                <button id="button_buy" onclick="acheterBonus(2)">Buy!</button>
+            </li>
+        </ul>
+    </div>
+    <footer id="footer_content">© 2023, Salome Dupre</footer>
+
+    <script src="./clicker.js"></script>
+</body>
+</html>
+

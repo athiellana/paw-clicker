@@ -1,0 +1,144 @@
+@font-face {
+	font-family: 'Soup';
+	src: url(./font/Spicy_Soup.ttf)
+}
+
+
+body {
+    background-image: url(./assets/background_v1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Soup';
+
+}
+
+#game_title {
+    background-image: url(./assets/paw_clicker.png);
+    height: 80px;
+    width: 300px;
+    position: absolute;
+    left: 7%;
+    z-index: 1;
+}
+
+#game_cat {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+#cat, #catOnClick {
+    position: absolute;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+
+#paws {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+/*OBJETS BONUS*/
+
+#catTree {
+    position: absolute;
+    z-index: 1;
+    left: 75%;
+    top: 49%;
+}
+
+/* BOUTIQUE DE BONUS*/
+
+#shop_cat {
+    background-color: rgb(189, 128, 106);
+    background-image: url(assets/petite_patoune.png);
+    border-radius: 7%;
+    box-shadow: 10px 5px 5px black;
+    position: absolute;
+    left: 2%;
+    top: 9%;
+    padding: 3%;
+    width: 20%;
+}
+
+#shop_title {
+    display: flex;
+    justify-content: center;
+    position: static;
+    margin-top: auto;
+    background-color: white;
+}
+
+.bonus-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.bonus-item {
+    width: 45%; /* Répartit les éléments en deux colonnes avec un espace entre eux */
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(165, 91, 64);
+    border-radius: 6%;
+    text-align: center;
+}
+
+#button_buy, #button_buy_autoclicker, #button_upgrade_autoclicker {
+    font-family: 'Soup';
+    background-color: bisque;
+    cursor: pointer;
+}
+
+/*GESTION DU BAS DE PAGE*/
+
+#footer_content {
+    position: absolute;
+    top: 96%;
+}
+
+/*GESTION DU MENU AVEC LES BOUTONS */
+#menu_buttons {
+    display: inline;
+    position: absolute;
+    left: 77%;
+}
+
+.button_skins, .button_param, .button_b {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Soup';
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button_skins:hover, .button_param:hover, .button_b:hover {
+  background-color: #fff;
+}
+
+.button_skins:active, .button_param:active, .button_b:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button_skins, .button_param, .button_b {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
